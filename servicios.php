@@ -1,0 +1,18 @@
+<?php
+$pageTitle = "Servicios - Relocation";
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $pageTitle ?></title>
+</head>
+<body>
+
+    <h1>Servicios</h1>
+    <p>Listado de servicios de relocation ofrecidos por la empresa.</p>
+
+</body>
+</html>
