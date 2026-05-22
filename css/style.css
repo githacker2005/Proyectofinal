@@ -663,3 +663,37 @@ select {
         padding: 1.4rem;
     }
 }
+/* =========================
+   VALIDACIONES FORMULARIO
+========================= */
+
+.input-error {
+    border-color: #c0392b;
+    background-color: #fff6f5;
+}
+
+.field-error {
+    display: block;
+    color: #c0392b;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.form-message {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #1f7a4d;
+    background-color: #eefaf3;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.error-message-general {
+    color: #c0392b;
+    background-color: #fff6f5;
+    padding: 0.8rem;
+    border-radius: 8px;
+}

@@ -34,7 +34,7 @@ include "includes/header.php";
     <div class="contact-form-wrapper">
         <h2>Formulario de contacto</h2>
 
-        <form action="#" method="POST" class="contact-form">
+         <form action="#" method="POST" class="contact-form" id="contactForm" novalidate>
             <div class="form-group">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: María López">
@@ -95,6 +95,8 @@ include "includes/header.php";
                     Acepto que mis datos sean utilizados para responder a esta solicitud de información.
                 </label>
             </div>
+            
+            <div id="formMessage" class="form-message"></div>
 
             <button type="submit">Enviar solicitud</button>
         </form>

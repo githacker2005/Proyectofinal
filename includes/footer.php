@@ -5,5 +5,6 @@
     <p>Proyecto final de Desarrollo de Aplicaciones Web.</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
