@@ -504,3 +504,69 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   PÁGINA SOBRE LA EMPRESA
+========================= */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.about-content {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+.about-card {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+.about-card h3 {
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+.about-card ul {
+    list-style: none;
+}
+
+.about-card li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-card li:last-child {
+    border-bottom: none;
+}
+
+.mission-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.mission-section div {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--color-acento);
+}
+
+/* Responsive sobre la empresa */
+
+@media (max-width: 800px) {
+    .about-section,
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+}
