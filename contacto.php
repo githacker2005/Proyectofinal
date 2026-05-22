@@ -1,18 +1,44 @@
 <?php
-$pageTitle = "Contacto - Relocation";
+$pageTitle = "Contacto - Relocation Services";
+include "includes/header.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?></title>
-</head>
-<body>
-
+<section>
     <h1>Contacto</h1>
-    <p>Formulario de contacto para solicitar información sobre servicios de relocation.</p>
+    <p>
+        Desde esta página los clientes podrán solicitar información sobre los servicios
+        de relocation. Más adelante este formulario se conectará con la base de datos.
+    </p>
+</section>
 
-</body>
-</html>
+<section>
+    <h2>Formulario de contacto</h2>
+
+    <form action="#" method="POST">
+        <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</section>
+
+<?php
+include "includes/footer.php";
+?>
