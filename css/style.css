@@ -570,3 +570,96 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   PÁGINA DE CONTACTO
+========================= */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contact-info,
+.contact-form-wrapper {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+.info-box {
+    background-color: var(--color-secundario);
+    padding: 1.3rem;
+    border-radius: var(--borde-redondeado);
+    margin-top: 1.5rem;
+}
+
+.info-box ul {
+    padding-left: 1.2rem;
+}
+
+.info-box li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    box-shadow: none;
+    padding: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-blanco);
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-check input {
+    width: auto;
+    margin-top: 0.3rem;
+}
+
+.form-check label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/* Responsive contacto */
+
+@media (max-width: 900px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 1.4rem;
+    }
+}
