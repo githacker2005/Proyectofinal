@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const formMessage = document.getElementById("formMessage");
 
     contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-
         clearErrors();
 
         let isValid = true;
@@ -57,12 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        if (isValid) {
-            formMessage.textContent = "Formulario validado correctamente. Más adelante se guardará en la base de datos.";
-            formMessage.className = "form-message success-message";
-
-            contactForm.reset();
-        } else {
+        if (!isValid) {
+            event.preventDefault();
             formMessage.textContent = "Revisa los campos marcados antes de enviar el formulario.";
             formMessage.className = "form-message error-message-general";
         }
