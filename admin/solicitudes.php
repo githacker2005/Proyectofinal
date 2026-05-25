@@ -8,7 +8,9 @@ $error = "";
 $success = "";
 
 if (isset($_GET["mensaje"])) {
-    if ($_GET["mensaje"] === "eliminada") {
+    if ($_GET["mensaje"] === "editada") {
+        $success = "Solicitud actualizada correctamente.";
+    } elseif ($_GET["mensaje"] === "eliminada") {
         $success = "Solicitud eliminada correctamente.";
     } elseif ($_GET["mensaje"] === "error_eliminar") {
         $error = "No se ha podido eliminar la solicitud.";

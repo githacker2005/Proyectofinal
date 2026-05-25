@@ -81,13 +81,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 ":id" => $id
             ]);
 
-            $success = "Solicitud actualizada correctamente.";
-
-            $stmt = $pdo->prepare("SELECT * FROM solicitudes WHERE id = :id");
-            $stmt->execute([
-                ":id" => $id
-            ]);
-            $solicitud = $stmt->fetch();
+            header("Location: solicitudes.php?mensaje=editada");
+                exit;
 
         } catch (PDOException $e) {
             $error = "No se ha podido actualizar la solicitud.";

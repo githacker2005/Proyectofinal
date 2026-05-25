@@ -16,6 +16,8 @@ if (isset($_GET["mensaje"])) {
         $success = "Servicio eliminado correctamente.";
     } elseif ($_GET["mensaje"] === "error_eliminar") {
         $error = "No se ha podido eliminar el servicio.";
+    } elseif ($_GET["mensaje"] === "error") {
+        $error = "Ha ocurrido un error al procesar la acción.";
     }
 }
 
