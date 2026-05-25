@@ -5,6 +5,15 @@ require_once "../config/database.php";
 
 $solicitudes = [];
 $error = "";
+$success = "";
+
+if (isset($_GET["mensaje"])) {
+    if ($_GET["mensaje"] === "eliminada") {
+        $success = "Solicitud eliminada correctamente.";
+    } elseif ($_GET["mensaje"] === "error_eliminar") {
+        $error = "No se ha podido eliminar la solicitud.";
+    }
+}
 
 try {
     $sql = "SELECT * FROM solicitudes ORDER BY fecha_creacion DESC";
@@ -59,6 +68,12 @@ try {
             </div>
         <?php endif; ?>
 
+        <?php if (!empty($success)): ?>
+            <div class="form-message success-message">
+                <?= htmlspecialchars($success) ?>
+            </div>
+        <?php endif; ?>
+
         <section class="admin-table-section">
             <div class="admin-section-header">
                 <h2>Listado de solicitudes</h2>
@@ -82,6 +97,7 @@ try {
                                 <th>Servicio</th>
                                 <th>Estado</th>
                                 <th>Fecha</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
 
@@ -99,6 +115,21 @@ try {
                                         </span>
                                     </td>
                                     <td><?= htmlspecialchars($solicitud["fecha_creacion"]) ?></td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <a href="editar_solicitud.php?id=<?= htmlspecialchars($solicitud["id"]) ?>" class="table-action-link">
+                                            Editar
+                                            </a>
+
+                                            <a 
+                                                href="eliminar_solicitud.php?id=<?= htmlspecialchars($solicitud["id"]) ?>" 
+                                                class="table-action-link delete-link"
+                                                onclick="return confirm('¿Seguro que quieres eliminar esta solicitud?');"
+                                            >
+                                                Eliminar
+                                            </a>
+                                        </div>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

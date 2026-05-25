@@ -913,3 +913,70 @@ select {
         padding: 1.2rem;
     }
 }
+/* =========================
+   EDICIÓN DE SOLICITUDES
+========================= */
+
+.admin-form-section {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+.admin-edit-form {
+    box-shadow: none;
+    padding: 0;
+}
+
+.admin-form-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.secondary-link {
+    color: var(--color-principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secondary-link:hover {
+    color: var(--color-acento);
+}
+
+.table-action-link {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 0.45rem 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.table-action-link:hover {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+}
+/* =========================
+   ELIMINACIÓN DE SOLICITUDES
+========================= */
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.delete-link {
+    background-color: #c0392b;
+}
+
+.delete-link:hover {
+    background-color: #922b21;
+    color: var(--color-blanco);
+}
