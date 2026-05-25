@@ -46,6 +46,7 @@ try {
             <ul>
                 <li><a href="dashboard.php">Inicio panel</a></li>
                 <li><a href="solicitudes.php">Solicitudes</a></li>
+                <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="../index.php">Ver web</a></li>
                 <li><a href="logout.php">Cerrar sesión</a></li>
             </ul>
@@ -98,9 +99,10 @@ try {
                     <a href="solicitudes.php" class="admin-card-link">Ver solicitudes</a>
                 </article>
 
-                <article>
+               <article>
                     <h3>Gestión de servicios</h3>
                     <p>Crear, modificar y eliminar servicios de relocation.</p>
+                    <a href="servicios.php" class="admin-card-link">Ver servicios</a>
                 </article>
 
                 <article>

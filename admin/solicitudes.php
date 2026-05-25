@@ -46,6 +46,7 @@ try {
             <ul>
                 <li><a href="dashboard.php">Inicio panel</a></li>
                 <li><a href="solicitudes.php">Solicitudes</a></li>
+                 <li><a href="servicios.php">Servicios</a></li>
                 <li><a href="../index.php">Ver web</a></li>
                 <li><a href="logout.php">Cerrar sesión</a></li>
             </ul>
