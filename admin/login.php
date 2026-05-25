@@ -1,10 +1,15 @@
 <?php
 
+session_start();
+
 require_once "../config/database.php";
 
 $error = "";
 
-$success = "";
+if (isset($_SESSION["admin_id"])) {
+    header("Location: dashboard.php");
+    exit;
+}
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"] ?? "");
@@ -23,7 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $usuario = $stmt->fetch();
 
             if ($usuario && password_verify($password, $usuario["password"])) {
-                $success = "Credenciales correctas. En el siguiente commit se activará la sesión de administrador.";
+                $_SESSION["admin_id"] = $usuario["id"];
+                $_SESSION["admin_nombre"] = $usuario["nombre"];
+                $_SESSION["admin_email"] = $usuario["email"];
+
+                header("Location: dashboard.php");
+                exit;
             } else {
                 $error = "Email o contraseña incorrectos.";
             }
@@ -57,12 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <?php if (!empty($error)): ?>
                 <div class="form-message error-message-general">
                     <?= htmlspecialchars($error) ?>
-                </div>
-            <?php endif; ?>
-
-            <?php if (!empty($success)): ?>
-                <div class="form-message success-message">
-                    <?= htmlspecialchars($success) ?>
                 </div>
             <?php endif; ?>
 

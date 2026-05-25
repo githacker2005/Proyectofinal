@@ -759,3 +759,67 @@ select {
 .back-link:hover {
     color: var(--color-acento);
 }
+/* =========================
+   PANEL DE ADMINISTRACIÓN
+========================= */
+
+.admin-body {
+    background-color: var(--color-secundario);
+    min-height: 100vh;
+}
+
+.admin-header {
+    background-color: var(--color-blanco);
+    padding: 1.2rem 1rem;
+    box-shadow: var(--sombra-suave);
+}
+
+.admin-header > div,
+.admin-header nav {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+}
+
+.admin-header h2 {
+    color: var(--color-principal);
+}
+
+.admin-main {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.admin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.admin-stat-card {
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--color-acento);
+}
+
+.admin-stat-card span {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--color-principal);
+    margin-bottom: 0.5rem;
+}
+
+.admin-actions {
+    margin-top: 2rem;
+}
+
+/* Responsive admin */
+
+@media (max-width: 800px) {
+    .admin-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
