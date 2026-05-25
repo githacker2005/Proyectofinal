@@ -45,6 +45,7 @@ try {
         <nav>
             <ul>
                 <li><a href="dashboard.php">Inicio panel</a></li>
+                <li><a href="solicitudes.php">Solicitudes</a></li>
                 <li><a href="../index.php">Ver web</a></li>
                 <li><a href="logout.php">Cerrar sesión</a></li>
             </ul>
@@ -94,6 +95,7 @@ try {
                 <article>
                     <h3>Gestión de solicitudes</h3>
                     <p>Consultar, editar y eliminar solicitudes de clientes.</p>
+                    <a href="solicitudes.php" class="admin-card-link">Ver solicitudes</a>
                 </article>
 
                 <article>
