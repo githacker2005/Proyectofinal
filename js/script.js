@@ -96,4 +96,4 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     }
-});
+}); 
