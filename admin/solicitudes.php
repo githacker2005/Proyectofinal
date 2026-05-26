@@ -3,6 +3,19 @@
 require_once "auth.php";
 require_once "../config/database.php";
 
+function formatearTipoServicio($tipoServicio) {
+    $servicios = [
+        "busqueda-vivienda" => "Búsqueda de vivienda",
+        "tramites" => "Gestión de trámites",
+        "orientacion-ciudad" => "Orientación en la ciudad",
+        "apoyo-familias" => "Apoyo a familias",
+        "relocation-laboral" => "Relocation laboral",
+        "acompanamiento" => "Acompañamiento personalizado"
+    ];
+
+    return $servicios[$tipoServicio] ?? $tipoServicio;
+}
+
 $solicitudes = [];
 $error = "";
 $success = "";
@@ -111,7 +124,7 @@ try {
                                     <td><?= htmlspecialchars($solicitud["email"]) ?></td>
                                     <td><?= htmlspecialchars($solicitud["telefono"]) ?></td>
                                     <td><?= htmlspecialchars($solicitud["ciudad_destino"]) ?></td>
-                                    <td><?= htmlspecialchars($solicitud["tipo_servicio"]) ?></td>
+                                    <td><?= htmlspecialchars(formatearTipoServicio($solicitud["tipo_servicio"])) ?></td>
                                     <td>
                                         <span class="status-badge">
                                             <?= htmlspecialchars($solicitud["estado"]) ?>
