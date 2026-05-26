@@ -1198,3 +1198,20 @@ select {
 .admin-main .error-message-general {
     border-left: 5px solid #c0392b;
 }
+/* =========================
+   ENLACE ÁREA PRIVADA
+========================= */
+
+.admin-access-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: var(--color-blanco);
+    opacity: 0.75;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.admin-access-link:hover {
+    opacity: 1;
+    color: var(--color-acento);
+}
