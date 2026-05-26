@@ -1215,3 +1215,25 @@ select {
     opacity: 1;
     color: var(--color-acento);
 }
+/* =========================
+   BOTÓN VOLVER LOGIN
+========================= */
+
+.login-actions {
+    margin-top: 1.5rem;
+}
+
+.login-back-button {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    padding: 0.85rem 1.2rem;
+    border-radius: var(--borde-redondeado);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-back-button:hover {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}

@@ -96,13 +96,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <button type="submit">Entrar al panel</button>
             </form>
 
-            <div class="login-help">
-                <p>Usuario provisional para pruebas:</p>
-                <p><strong>Email:</strong> admin@relocation.com</p>
-                <p><strong>Contraseña:</strong> password</p>
+            <div class="login-actions">
+                <a href="../index.php" class="back-link">Volver al sitio web</a>
             </div>
 
-            <a href="../index.php" class="back-link">Volver a la web</a>
+            
         </section>
     </main>
 
