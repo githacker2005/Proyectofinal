@@ -193,23 +193,6 @@ textarea {
     min-height: 120px;
     resize: vertical;
 }
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
-    text-align: center;
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin-bottom: 0.4rem;
-}
-
 /* =========================
    RESPONSIVE
 ========================= */
@@ -1236,4 +1219,83 @@ select {
 .login-back-button:hover {
     background-color: var(--color-principal);
     color: var(--color-blanco);
+}
+/* =========================
+   FOOTER PROFESIONAL
+========================= */
+
+.site-footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    margin-top: 3rem;
+    padding: 3rem 1rem 1.5rem;
+}
+
+.footer-container {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer-brand h2,
+.footer-info h3 {
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+.footer-brand p,
+.footer-info p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    max-width: 420px;
+}
+
+.footer-bottom {
+    max-width: var(--ancho-maximo);
+    margin: 2rem auto 0;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.admin-access-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-blanco);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 0.6rem 1rem;
+    border-radius: var(--borde-redondeado);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.admin-access-link:hover {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    border-color: var(--color-acento);
+}
+
+/* Responsive footer */
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .site-footer {
+        padding: 2.5rem 1rem 1.3rem;
+    }
 }
