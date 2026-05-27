@@ -487,72 +487,7 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
-/* =========================
-   PÁGINA SOBRE LA EMPRESA
-========================= */
 
-.about-section {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
-
-.about-content {
-    background-color: var(--color-blanco);
-    padding: 2rem;
-    border-radius: var(--borde-redondeado);
-    box-shadow: var(--sombra-suave);
-}
-
-.about-card {
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
-    padding: 2rem;
-    border-radius: var(--borde-redondeado);
-    box-shadow: var(--sombra-suave);
-}
-
-.about-card h3 {
-    color: var(--color-blanco);
-    margin-bottom: 1rem;
-}
-
-.about-card ul {
-    list-style: none;
-}
-
-.about-card li {
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.about-card li:last-child {
-    border-bottom: none;
-}
-
-.mission-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.mission-section div {
-    background-color: var(--color-blanco);
-    padding: 2rem;
-    border-radius: var(--borde-redondeado);
-    box-shadow: var(--sombra-suave);
-    border-top: 5px solid var(--color-acento);
-}
-
-/* Responsive sobre la empresa */
-
-@media (max-width: 800px) {
-    .about-section,
-    .mission-section {
-        grid-template-columns: 1fr;
-    }
-}
 /* =========================
    PÁGINA DE CONTACTO
 ========================= */
@@ -717,18 +652,6 @@ select {
 .login-form {
     box-shadow: none;
     padding: 0;
-}
-
-.login-help {
-    background-color: var(--color-secundario);
-    padding: 1rem;
-    border-radius: var(--borde-redondeado);
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
-}
-
-.login-help p {
-    margin-bottom: 0.3rem;
 }
 
 .back-link {
@@ -1181,44 +1104,13 @@ select {
 .admin-main .error-message-general {
     border-left: 5px solid #c0392b;
 }
-/* =========================
-   ENLACE ÁREA PRIVADA
-========================= */
 
-.admin-access-link {
-    display: inline-block;
-    margin-top: 0.8rem;
-    color: var(--color-blanco);
-    opacity: 0.75;
-    font-size: 0.9rem;
-    text-decoration: none;
-}
-
-.admin-access-link:hover {
-    opacity: 1;
-    color: var(--color-acento);
-}
 /* =========================
    BOTÓN VOLVER LOGIN
 ========================= */
 
 .login-actions {
     margin-top: 1.5rem;
-}
-
-.login-back-button {
-    display: inline-block;
-    background-color: var(--color-acento);
-    color: var(--color-texto);
-    padding: 0.85rem 1.2rem;
-    border-radius: var(--borde-redondeado);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.login-back-button:hover {
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
 }
 /* =========================
    FOOTER PROFESIONAL
@@ -1299,87 +1191,7 @@ select {
         padding: 2.5rem 1rem 1.3rem;
     }
 }
-/* =========================
-   LOGO CABECERA
-========================= */
 
-.header-brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo-link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-}
-/* =========================
-   CABECERA CON LOGO
-========================= */
-
-.header-content {
-    max-width: var(--ancho-maximo);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.logo-link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.site-logo {
-    width: 180px;
-    max-width: 180px;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-
-header nav {
-    margin-top: 0;
-}
-
-header nav ul {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 700px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .site-logo {
-        width: 150px;
-        max-width: 150px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-@media (max-width: 600px) {
-    .header-brand {
-        align-items: flex-start;
-    }
-
-    .site-logo {
-        width: 58px;
-        height: 58px;
-    }
-}
 /* =========================
    HOME MODERNA RELOCATION
 ========================= */
