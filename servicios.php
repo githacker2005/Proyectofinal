@@ -1,126 +1,128 @@
 <?php
-$pageTitle = "Servicios - Relocation Services";
+$pageTitle = "Servicios - Bilbao Relocation";
+$mainClass = "modern-public-main";
 include "includes/header.php";
 ?>
 
-<section class="page-hero">
-    <span class="hero-label">Servicios</span>
-    <h1>Servicios de relocation personalizados</h1>
-    <p>
-        Ofrecemos apoyo durante todo el proceso de traslado para que cada cliente pueda
-        instalarse y adaptarse a su nuevo entorno de forma más sencilla y organizada.
-    </p>
+<section class="modern-hero modern-hero-services">
+    <div class="modern-hero-overlay"></div>
+
+    <div class="modern-hero-content">
+        <span class="modern-label">Servicios de relocation</span>
+        <h1>Soluciones para que tu llegada sea más sencilla, rápida y organizada</h1>
+        <p>
+            Servicios diseñados para acompañar a personas, familias y profesionales
+            durante su traslado, instalación y adaptación a un nuevo entorno.
+        </p>
+    </div>
 </section>
 
-<section>
-    <h2>¿En qué podemos ayudarte?</h2>
-    <p>
-        Los servicios de relocation están pensados para personas, familias o profesionales
-        que se trasladan a una nueva ciudad o país y necesitan acompañamiento en los
-        primeros pasos del proceso.
-    </p>
+<section class="modern-intro-block">
+    <div class="modern-intro-text">
+        <span class="modern-label dark">Qué ofrecemos</span>
+        <h2>Un acompañamiento pensado para cada etapa del traslado</h2>
+        <p>
+            Cada proceso de relocation es diferente. Por eso, los servicios están pensados
+            para adaptarse a las necesidades reales de cada cliente: vivienda, trámites,
+            orientación local, familia, trabajo y adaptación.
+        </p>
+    </div>
 
-    <div class="services-grid">
-        <article class="service-card">
-            <span class="service-icon">🏠</span>
+    <div class="modern-intro-image">
+        <img src="img/agente.jpg" alt="Vivienda para relocation">
+    </div>
+</section>
+
+<section class="modern-services-section">
+    <div class="modern-section-heading">
+        <span class="modern-label dark">Servicios principales</span>
+        <h2>Todo lo necesario para empezar con tranquilidad</h2>
+    </div>
+
+    <div class="modern-services-grid">
+        <article class="modern-service-card">
+            <span>01</span>
             <h3>Búsqueda de vivienda</h3>
-            <p>
-                Ayuda en la localización de viviendas según presupuesto, zona, duración
-                de la estancia y necesidades personales del cliente.
-            </p>
+            <p>Apoyo para localizar opciones de alojamiento según presupuesto, zona, duración de la estancia y necesidades personales.</p>
         </article>
 
-        <article class="service-card">
-            <span class="service-icon">📄</span>
+        <article class="modern-service-card featured">
+            <span>02</span>
             <h3>Gestión de trámites</h3>
-            <p>
-                Orientación en trámites básicos relacionados con la llegada, organización
-                documental y primeros pasos administrativos.
-            </p>
+            <p>Orientación en procesos administrativos básicos para facilitar la llegada y la instalación inicial.</p>
         </article>
 
-        <article class="service-card">
-            <span class="service-icon">🧭</span>
+        <article class="modern-service-card">
+            <span>03</span>
             <h3>Orientación en la ciudad</h3>
-            <p>
-                Información sobre barrios, transporte, servicios sanitarios, colegios,
-                comercios y recursos útiles del entorno.
-            </p>
+            <p>Información práctica sobre barrios, transporte, colegios, servicios sanitarios y recursos útiles del entorno.</p>
         </article>
 
-        <article class="service-card">
-            <span class="service-icon">👨‍👩‍👧</span>
+        <article class="modern-service-card">
+            <span>04</span>
             <h3>Apoyo a familias</h3>
-            <p>
-                Acompañamiento específico para familias que necesitan organizar vivienda,
-                colegios, servicios y adaptación al nuevo destino.
-            </p>
+            <p>Acompañamiento específico para familias que necesitan organizar vivienda, colegios y adaptación al nuevo destino.</p>
         </article>
 
-        <article class="service-card">
-            <span class="service-icon">💼</span>
+        <article class="modern-service-card">
+            <span>05</span>
             <h3>Relocation laboral</h3>
-            <p>
-                Servicio orientado a profesionales que se trasladan por motivos laborales
-                y necesitan instalarse de forma rápida y eficiente.
-            </p>
+            <p>Servicio orientado a profesionales que se trasladan por motivos laborales y necesitan instalarse de forma eficiente.</p>
         </article>
 
-        <article class="service-card">
-            <span class="service-icon">🤝</span>
+        <article class="modern-service-card featured">
+            <span>06</span>
             <h3>Acompañamiento personalizado</h3>
-            <p>
-                Seguimiento cercano durante el proceso para resolver dudas y facilitar
-                una adaptación más cómoda al nuevo entorno.
-            </p>
+            <p>Seguimiento cercano durante el proceso para resolver dudas y facilitar una adaptación más cómoda.</p>
         </article>
     </div>
 </section>
 
-<section class="service-process">
-    <h2>Proceso de trabajo</h2>
+<section class="modern-parallax modern-parallax-services">
+    <div class="modern-parallax-overlay"></div>
 
-    <div class="timeline">
-        <div class="timeline-item">
+    <div class="modern-parallax-content">
+        <h2>La diferencia está en llegar acompañado, informado y con un plan claro.</h2>
+    </div>
+</section>
+
+<section class="modern-process-section">
+    <div class="modern-section-heading">
+        <span class="modern-label dark">Proceso</span>
+        <h2>Cómo trabajamos cada solicitud</h2>
+    </div>
+
+    <div class="modern-process-grid">
+        <div>
             <span>1</span>
-            <div>
-                <h3>Recepción de la solicitud</h3>
-                <p>El cliente contacta mediante el formulario indicando sus necesidades principales.</p>
-            </div>
+            <h3>Recibimos tu solicitud</h3>
+            <p>El cliente explica su situación, fechas, destino y necesidades principales.</p>
         </div>
 
-        <div class="timeline-item">
+        <div>
             <span>2</span>
-            <div>
-                <h3>Análisis de necesidades</h3>
-                <p>Se revisa la información recibida para comprender el tipo de traslado y el apoyo necesario.</p>
-            </div>
+            <h3>Analizamos el caso</h3>
+            <p>Se revisa la información para entender qué tipo de apoyo necesita realmente.</p>
         </div>
 
-        <div class="timeline-item">
+        <div>
             <span>3</span>
-            <div>
-                <h3>Propuesta de servicio</h3>
-                <p>Se plantea una solución adaptada a la situación personal, familiar o profesional del cliente.</p>
-            </div>
+            <h3>Diseñamos una propuesta</h3>
+            <p>Se plantea una solución adaptada al perfil y al proceso de traslado.</p>
         </div>
 
-        <div class="timeline-item">
+        <div>
             <span>4</span>
-            <div>
-                <h3>Acompañamiento y seguimiento</h3>
-                <p>Se acompaña al cliente durante las fases necesarias del proceso de relocation.</p>
-            </div>
+            <h3>Acompañamos el proceso</h3>
+            <p>Se realiza seguimiento durante las fases clave de llegada y adaptación.</p>
         </div>
     </div>
 </section>
 
-<section class="cta-section">
-    <h2>¿Quieres recibir información personalizada?</h2>
-    <p>
-        Rellena el formulario de contacto y cuéntanos qué necesitas para tu proceso de traslado.
-    </p>
-    <a href="contacto.php" class="btn-primary">Solicitar información</a>
+<section class="modern-final-cta">
+    <h2>¿Necesitas ayuda con tu traslado?</h2>
+    <p>Cuéntanos tu situación y recibe una orientación inicial personalizada.</p>
+    <a href="contacto.php" class="modern-btn-gold">Solicitar información</a>
 </section>
 
 <?php

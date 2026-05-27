@@ -1,9 +1,9 @@
 <?php
 if (!isset($pageTitle)) {
-    $pageTitle = "Relocation Services";
+    $pageTitle = "Bilbao Relocation";
 }
 
-$currentPage = basename($_SERVER['PHP_SELF']);
+$currentPage = basename($_SERVER["PHP_SELF"]);
 ?>
 
 <!DOCTYPE html>
@@ -11,33 +11,49 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?></title>
+    <title><?= htmlspecialchars($pageTitle) ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <div>
-        <h2>Relocation Services</h2>
-        <p>Servicios personalizados para facilitar procesos de traslado.</p>
-    </div>
+<header class="site-header">
+    <div class="site-header-container">
+        <a href="index.php" class="site-brand">
+            <img src="img/logo3.png" alt="Bilbao Relocation" class="site-brand-logo">
+        </a>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.php">Inicio</a>
-            </li>
-            <li>
-                <a href="servicios.php">Servicios</a>
-            </li>
-            <li>
-                <a href="sobre-mi.php">Sobre mí</a>
-            </li>
-            <li>
-                <a href="contacto.php">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="site-nav">
+            <ul>
+                <li>
+                    <a href="index.php" class="<?= $currentPage === 'index.php' ? 'active' : '' ?>">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.php" class="<?= $currentPage === 'servicios.php' ? 'active' : '' ?>">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-mi.php" class="<?= $currentPage === 'sobre-mi.php' ? 'active' : '' ?>">
+                        Sobre mí
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.php" class="<?= $currentPage === 'contacto.php' ? 'active' : '' ?>">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="contacto.php" class="site-header-cta">
+            Solicitar información
+        </a>
+    </div>
 </header>
 
-<main>
+<main class="<?= $mainClass ?? '' ?>">

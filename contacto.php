@@ -3,6 +3,7 @@
 require_once "config/database.php";
 
 $pageTitle = "Contacto - Relocation Services";
+$mainClass = "modern-public-main";
 
 $mensajeExito = "";
 $mensajeError = "";
@@ -80,36 +81,53 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 include "includes/header.php";
 ?>
 
-<section class="page-hero">
-    <span class="hero-label">Contacto</span>
-    <h1>Solicita información sobre tu proceso de relocation</h1>
-    <p>
-        Completa el formulario con tus datos principales y nos pondremos en contacto
-        para conocer mejor tu situación y ofrecerte una orientación personalizada.
-    </p>
+<section class="modern-hero modern-hero-contact">
+    <div class="modern-hero-overlay"></div>
+
+    <div class="modern-hero-content">
+        <span class="modern-label">Contacto</span>
+        <h1>Cuéntanos tu traslado y empezamos a organizarlo contigo</h1>
+        <p>
+            Rellena el formulario con tus datos principales y nos pondremos en contacto
+            para conocer tu situación y ofrecerte una orientación personalizada.
+        </p>
+    </div>
 </section>
 
-<section class="contact-section">
-    <div class="contact-info">
-        <h2>Cuéntanos qué necesitas</h2>
+<section class="modern-contact-section">
+    <div class="modern-contact-info">
+        <span class="modern-label dark">Primer contacto</span>
+        <h2>La información adecuada nos ayuda a orientarte mejor</h2>
         <p>
-            Este formulario está pensado para recoger la información básica de personas,
-            familias o profesionales que necesitan ayuda durante un proceso de traslado.
+            Este formulario permite recoger los datos iniciales de personas, familias o profesionales
+            que necesitan apoyo durante un proceso de relocation.
         </p>
 
-        <div class="info-box">
-            <h3>Información que puedes enviar</h3>
-            <ul>
-                <li>Ciudad o país de destino</li>
-                <li>Fecha aproximada de llegada</li>
-                <li>Tipo de servicio que necesitas</li>
-                <li>Dudas concretas sobre tu traslado</li>
-            </ul>
+        <div class="modern-contact-details">
+            <div>
+                <strong>Email</strong>
+                <span>info@bilbaorelocation.com</span>
+            </div>
+
+            <div>
+                <strong>Teléfono</strong>
+                <span>+34 688 456 219</span>
+            </div>
+
+            <div>
+                <strong>Ubicación</strong>
+                <span>Getxo</span>
+            </div>
+
+            <div>
+                <strong>Horario</strong>
+                <span>8:00 - 20:00</span>
+            </div>
         </div>
     </div>
 
-    <div class="contact-form-wrapper">
-        <h2>Formulario de contacto</h2>
+    <div class="modern-contact-form-card">
+        <h2>Solicitar información</h2>
 
         <?php if (!empty($mensajeExito)): ?>
             <div class="form-message success-message">

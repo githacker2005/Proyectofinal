@@ -1,110 +1,214 @@
 <?php
-$pageTitle = "Inicio - Relocation Services";
+$pageTitle = "Inicio - Bilbao Relocation";
+$mainClass = "home-main";
 include "includes/header.php";
 ?>
 
-<section class="hero">
-    <div class="hero-content">
-        <span class="hero-label">Servicios de relocation</span>
+<section class="home-hero-parallax">
+    <div class="home-hero-overlay"></div>
 
-        <h1>Te ayudamos a empezar una nueva etapa sin complicaciones</h1>
+    <div class="home-hero-content">
+        <span class="home-tag">Relocation en Bilbao y alrededores</span>
+
+        <h1>Tu nueva vida empieza con una llegada más sencilla</h1>
 
         <p>
-            Servicio personalizado para acompañar a personas y familias durante su proceso
-            de traslado, búsqueda de vivienda, trámites iniciales y adaptación a una nueva ciudad.
+            Acompañamos a personas, familias y profesionales durante su traslado,
+            ayudándoles a instalarse con seguridad, claridad y tranquilidad desde el primer día.
         </p>
 
-        <div class="hero-buttons">
-            <a href="contacto.php" class="btn-primary">Solicitar información</a>
-            <a href="servicios.php" class="btn-secondary">Ver servicios</a>
+        <div class="home-hero-buttons">
+            <a href="contacto.php" class="home-btn-primary">Solicitar información</a>
+            <a href="sobre-mi.php" class="home-btn-secondary">Conocer el proyecto</a>
+        </div>
+
+        <div class="home-hero-stats">
+            <div>
+                <strong>01</strong>
+                <span>Análisis personalizado</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Plan de llegada</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Acompañamiento real</span>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="intro-section">
-    <div>
-        <h2>Una solución profesional para procesos de traslado</h2>
-        <p>
-            Esta aplicación web permite presentar los servicios de relocation de una profesional
-            autónoma y facilitar la recepción de solicitudes de clientes interesados.
-        </p>
+<section class="home-intro-section">
+    <div class="home-intro-image">
+        <img 
+            src="img/GUGEN.jpg" 
+            alt="Ciudad moderna para relocation"
+        >
     </div>
 
-    <div class="intro-card">
-        <h3>Objetivo del proyecto</h3>
+    <div class="home-intro-content">
+        <span class="home-section-label">Una llegada más fácil</span>
+
+        <h2>Relocation pensado para personas que necesitan empezar de nuevo sin perder tiempo</h2>
+
         <p>
-            Crear una plataforma sencilla, clara y profesional que mejore la presencia digital
-            de la empresa y permita gestionar contactos desde un panel de administración.
+            Mudarse a una nueva ciudad implica tomar muchas decisiones en poco tiempo:
+            vivienda, trámites, ubicación, adaptación, colegios, transporte y organización
+            de los primeros días.
         </p>
+
+        <p>
+            Esta web nace para presentar un servicio de acompañamiento cercano y profesional,
+            pensado para reducir la incertidumbre y facilitar cada paso del proceso.
+        </p>
+
+        <a href="contacto.php" class="home-link-arrow">Hablar sobre mi traslado</a>
     </div>
 </section>
 
-<section>
-    <h2>Servicios principales</h2>
+<section class="home-parallax-message">
+    <div class="home-parallax-overlay"></div>
 
-    <div class="cards-grid">
-        <article>
-            <h3>Búsqueda de vivienda</h3>
-            <p>
-                Apoyo en la búsqueda de alojamiento según presupuesto, zona, necesidades
-                personales y duración de la estancia.
-            </p>
-        </article>
+    <div class="home-parallax-content">
+        <span class="home-section-label light">Bilbao Relocation</span>
 
-        <article>
-            <h3>Gestión de trámites</h3>
-            <p>
-                Orientación en procesos administrativos básicos relacionados con la llegada
-                e instalación en una nueva ciudad o país.
-            </p>
-        </article>
-
-        <article>
-            <h3>Acompañamiento personalizado</h3>
-            <p>
-                Atención cercana durante las primeras fases del traslado para facilitar
-                la adaptación del cliente a su nuevo entorno.
-            </p>
-        </article>
+        <h2>Convertimos una mudanza compleja en un proceso claro, guiado y mucho más humano.</h2>
     </div>
 </section>
 
-<section class="process-section">
-    <h2>¿Cómo funciona?</h2>
+<section class="home-value-section">
+    <div class="home-section-heading">
+        <span class="home-section-label">Valor diferencial</span>
+        <h2>Más que encontrar un lugar: ayudarte a sentirte ubicado</h2>
+        <p>
+            El objetivo no es solo llegar a una ciudad nueva, sino hacerlo con información,
+            confianza y una planificación adaptada a cada situación.
+        </p>
+    </div>
 
-    <div class="steps-grid">
-        <div class="step-card">
+    <div class="home-value-grid">
+        <article class="home-value-card">
             <span>01</span>
-            <h3>Contacto inicial</h3>
-            <p>El cliente envía una solicitud explicando su situación y necesidades.</p>
-        </div>
+            <h3>Orientación clara</h3>
+            <p>
+                Información útil para tomar decisiones sobre zonas, vivienda,
+                transporte y primeros pasos en el nuevo entorno.
+            </p>
+        </article>
 
-        <div class="step-card">
+        <article class="home-value-card featured">
             <span>02</span>
-            <h3>Análisis del caso</h3>
-            <p>Se revisan los datos recibidos para valorar qué tipo de ayuda necesita.</p>
-        </div>
+            <h3>Acompañamiento cercano</h3>
+            <p>
+                Un trato personalizado para que el cliente no se sienta solo durante
+                el proceso de traslado y adaptación.
+            </p>
+        </article>
 
-        <div class="step-card">
+        <article class="home-value-card">
             <span>03</span>
-            <h3>Propuesta personalizada</h3>
-            <p>Se ofrece una solución adaptada al traslado y al perfil del cliente.</p>
-        </div>
+            <h3>Gestión organizada</h3>
+            <p>
+                Recogida de información, seguimiento de solicitudes y planificación
+                ordenada desde el primer contacto.
+            </p>
+        </article>
+    </div>
+</section>
 
-        <div class="step-card">
-            <span>04</span>
-            <h3>Acompañamiento</h3>
-            <p>Se acompaña al cliente durante el proceso para facilitar su adaptación.</p>
+<section class="home-image-strip">
+    <div class="home-strip-item large">
+        <img 
+            src="img/vivienda.png" 
+            alt="Vivienda y adaptación"
+        >
+        <div>
+            <h3>Vivienda</h3>
+            <p>Apoyo para encontrar opciones adaptadas al cliente.</p>
+        </div>
+    </div>
+
+    <div class="home-strip-item">
+        <img 
+            src="img/instalacion.jpg" 
+            alt="Nueva vivienda"
+        >
+        <div>
+            <h3>Instalación</h3>
+            <p>Organización de los primeros pasos.</p>
+        </div>
+    </div>
+
+    <div class="home-strip-item">
+        <img 
+            src="img/playa.jpg" 
+            alt="Ciudad y orientación"
+        >
+        <div>
+            <h3>Entorno</h3>
+            <p>Información práctica para adaptarse mejor.</p>
         </div>
     </div>
 </section>
 
-<section class="cta-section">
-    <h2>¿Necesitas ayuda con un traslado?</h2>
-    <p>
-        Contacta para recibir información personalizada sobre los servicios disponibles.
-    </p>
-    <a href="contacto.php" class="btn-primary">Contactar ahora</a>
+<section class="home-process-section">
+    <div class="home-section-heading">
+        <span class="home-section-label">Proceso de trabajo</span>
+        <h2>Un método sencillo para acompañar cada traslado</h2>
+    </div>
+
+    <div class="home-process-grid">
+        <div class="home-process-step">
+            <span>1</span>
+            <h3>Contacto inicial</h3>
+            <p>El cliente explica su situación, destino, fechas aproximadas y necesidades principales.</p>
+        </div>
+
+        <div class="home-process-step">
+            <span>2</span>
+            <h3>Análisis del caso</h3>
+            <p>Se revisa la información para entender qué tipo de apoyo necesita realmente.</p>
+        </div>
+
+        <div class="home-process-step">
+            <span>3</span>
+            <h3>Plan personalizado</h3>
+            <p>Se propone una orientación adaptada al perfil del cliente y a su proceso de llegada.</p>
+        </div>
+
+        <div class="home-process-step">
+            <span>4</span>
+            <h3>Seguimiento</h3>
+            <p>Se acompaña al cliente durante las fases clave para facilitar su adaptación.</p>
+        </div>
+    </div>
+</section>
+
+<section class="home-final-cta">
+    <div class="home-final-content">
+        <span class="home-section-label light">Empieza con claridad</span>
+
+        <h2>¿Estás preparando un traslado y necesitas ayuda para organizarlo?</h2>
+
+        <p>
+            Cuéntanos tu situación y recibe una orientación inicial para saber cómo podemos ayudarte.
+        </p>
+
+        <div class="home-hero-buttons">
+            <a href="contacto.php" class="home-btn-primary">Solicitar información</a>
+            <a href="servicios.php" class="home-btn-outline">Ver servicios disponibles</a>
+        </div>
+    </div>
+
+    <div class="home-final-image">
+        <img 
+            src="img/iberdrola.jpg" 
+            alt="Persona preparando un traslado"
+        >
+    </div>
 </section>
 
 <?php

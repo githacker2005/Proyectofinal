@@ -1,102 +1,102 @@
 <?php
-$pageTitle = "Sobre la empresa - Relocation Services";
+$pageTitle = "Sobre la empresa - Bilbao Relocation";
+$mainClass = "modern-public-main";
 include "includes/header.php";
 ?>
 
-<section class="page-hero">
-    <span class="hero-label">Sobre la empresa</span>
-    <h1>Acompañamiento profesional en procesos de relocation</h1>
-    <p>
-        Relocation Services nace con el objetivo de facilitar los procesos de traslado
-        de personas, familias y profesionales que necesitan instalarse en una nueva ciudad
-        de forma organizada, tranquila y personalizada.
-    </p>
-</section>
+<section class="modern-hero modern-hero-about">
+    <div class="modern-hero-overlay"></div>
 
-<section class="about-section">
-    <div class="about-content">
-        <h2>Una atención cercana y personalizada</h2>
+    <div class="modern-hero-content">
+        <span class="modern-label">Sobre Bilbao Relocation</span>
+        <h1>Un servicio cercano para hacer más fácil cada proceso de traslado</h1>
         <p>
-            La empresa está orientada a ofrecer un servicio de acompañamiento individualizado,
-            adaptado a las necesidades de cada cliente. Cada proceso de relocation es diferente,
-            por lo que se presta especial atención a la situación personal, familiar o profesional
-            de cada persona.
-        </p>
-
-        <p>
-            El objetivo principal es reducir la incertidumbre que suele aparecer durante un
-            traslado, ayudando al cliente en aspectos como la búsqueda de vivienda, la orientación
-            en la ciudad, la organización de trámites y la adaptación al nuevo entorno.
+            Bilbao Relocation nace para acompañar a personas, familias y profesionales
+            que necesitan instalarse en un nuevo entorno con seguridad, orden y confianza.
         </p>
     </div>
+</section>
 
-    <div class="about-card">
-        <h3>Valores del servicio</h3>
-        <ul>
-            <li>Atención personalizada</li>
-            <li>Organización y claridad</li>
-            <li>Cercanía con el cliente</li>
-            <li>Confianza durante todo el proceso</li>
-            <li>Adaptación a cada necesidad</li>
-        </ul>
+<section class="modern-intro-block reverse">
+    <div class="modern-intro-image">
+        <img src="img/etxebarri.jpg" alt="Acompañamiento profesional">
+    </div>
+
+    <div class="modern-intro-text">
+        <span class="modern-label dark">Nuestra forma de trabajar</span>
+        <h2>Atención personalizada, organización y trato humano</h2>
+        <p>
+            Un traslado no consiste solo en cambiar de vivienda. Implica tomar decisiones,
+            adaptarse a un entorno nuevo y resolver muchas gestiones en poco tiempo.
+        </p>
+        <p>
+            Por eso, el proyecto se basa en una atención individualizada, clara y cercana,
+            adaptada a las circunstancias de cada cliente.
+        </p>
     </div>
 </section>
 
-<section>
-    <h2>¿Por qué se crea esta aplicación web?</h2>
+<section class="modern-values-section">
+    <div class="modern-section-heading">
+        <span class="modern-label dark">Valores</span>
+        <h2>Lo que define el servicio</h2>
+    </div>
 
-    <div class="cards-grid">
+    <div class="modern-values-grid">
         <article>
-            <h3>Mejorar la presencia digital</h3>
-            <p>
-                La web permite mostrar de forma profesional los servicios ofrecidos,
-                facilitando que los clientes comprendan mejor en qué consiste el trabajo
-                de relocation.
-            </p>
+            <h3>Cercanía</h3>
+            <p>Un trato humano para que el cliente se sienta acompañado durante todo el proceso.</p>
         </article>
 
         <article>
-            <h3>Centralizar solicitudes</h3>
-            <p>
-                El formulario de contacto permite recoger los datos principales de cada cliente
-                y almacenarlos para poder gestionarlos posteriormente desde el panel de administración.
-            </p>
+            <h3>Claridad</h3>
+            <p>Información útil, directa y comprensible para tomar mejores decisiones.</p>
         </article>
 
         <article>
-            <h3>Optimizar la gestión interna</h3>
-            <p>
-                El panel privado permitirá consultar, editar y organizar solicitudes de forma
-                más cómoda, sustituyendo procesos manuales menos eficientes.
-            </p>
+            <h3>Organización</h3>
+            <p>Planificación de los pasos principales para reducir incertidumbre y pérdida de tiempo.</p>
+        </article>
+
+        <article>
+            <h3>Confianza</h3>
+            <p>Seguimiento profesional y atención adaptada a las necesidades reales del cliente.</p>
         </article>
     </div>
 </section>
 
-<section class="mission-section">
+<section class="modern-parallax modern-parallax-about">
+    <div class="modern-parallax-overlay"></div>
+
+    <div class="modern-parallax-content">
+        <h2>El objetivo no es solo llegar a una ciudad nueva, sino empezar con confianza.</h2>
+    </div>
+</section>
+
+<section class="modern-mission-section">
     <div>
-        <h2>Misión</h2>
+        <span class="modern-label dark">Misión</span>
+        <h2>Facilitar cada traslado</h2>
         <p>
-            Facilitar el proceso de traslado de los clientes mediante un servicio profesional,
+            Ayudar a los clientes a instalarse en un nuevo entorno mediante un servicio profesional,
             cercano y adaptado a sus necesidades.
         </p>
     </div>
 
     <div>
-        <h2>Visión</h2>
+        <span class="modern-label dark">Visión</span>
+        <h2>Ser una referencia local</h2>
         <p>
-            Convertirse en una solución de referencia para personas y familias que buscan
-            apoyo durante su llegada a un nuevo entorno.
+            Convertirse en una solución de confianza para personas y familias que buscan apoyo
+            durante su llegada a Bilbao y alrededores.
         </p>
     </div>
 </section>
 
-<section class="cta-section">
-    <h2>¿Quieres conocer los servicios disponibles?</h2>
-    <p>
-        Consulta los servicios de relocation y contacta para recibir información personalizada.
-    </p>
-    <a href="servicios.php" class="btn-primary">Ver servicios</a>
+<section class="modern-final-cta">
+    <h2>¿Quieres conocer cómo podemos ayudarte?</h2>
+    <p>Consulta los servicios disponibles o envía una solicitud de información.</p>
+    <a href="servicios.php" class="modern-btn-gold">Ver servicios</a>
 </section>
 
 <?php
