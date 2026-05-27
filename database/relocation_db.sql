@@ -1,4 +1,6 @@
-CREATE DATABASE IF NOT EXISTS relocation_db
+DROP DATABASE IF EXISTS relocation_db;
+
+CREATE DATABASE relocation_db
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
@@ -17,7 +19,7 @@ CREATE TABLE usuarios_admin (
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Usuario administrador provisional
+-- Usuario administrador
 -- Email: admin@relocation.com
 -- Contraseña: password
 
@@ -25,7 +27,7 @@ INSERT INTO usuarios_admin (nombre, email, password, rol)
 VALUES (
     'Administrador',
     'admin@relocation.com',
-    '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.',
+    '$2y$12$oA7lXkBDma3qBWkxUkPO4O0zAeC/Kqq34StNUBsPb2GKIT1EdFm1G',
     'administrador'
 );
 
@@ -62,6 +64,20 @@ VALUES
 (
     'Orientación en la ciudad',
     'Información sobre barrios, transporte, colegios, servicios sanitarios y recursos útiles del entorno.',
+    NULL,
+    'Según necesidades',
+    1
+),
+(
+    'Apoyo a familias',
+    'Acompañamiento específico para familias que necesitan organizar vivienda, colegios, servicios y adaptación al nuevo destino.',
+    NULL,
+    'Según necesidades',
+    1
+),
+(
+    'Relocation laboral',
+    'Servicio orientado a profesionales que se trasladan por motivos laborales y necesitan instalarse de forma rápida y organizada.',
     NULL,
     'Según necesidades',
     1
